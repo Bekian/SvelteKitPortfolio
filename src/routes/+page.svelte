@@ -1,18 +1,10 @@
 <script>
-	import { time } from '../lib/stores';
-
-	const formatter = new Intl.DateTimeFormat(
-		'en',
-		{
-			hour12: true,
-			hour: 'numeric',
-			minute: '2-digit',
-			second: '2-digit'
-		}
-	);
+	const pages = ['home', 'projects', 'about', 'contact']
 </script>
 
-<h1 class="text-5xl text-center font-medium text-grey">The time is {formatter.format($time)}</h1>
+
+
+<h1 class="text-5xl text-center font-medium text-grey">A portfolio!</h1>
 
 <style lang="postcss">
 :global(html) {
