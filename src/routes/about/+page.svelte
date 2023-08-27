@@ -1,1 +1,1 @@
-<h1 class="text-5xl text-center font-medium text-grey">An about me!</h1>
+<h1 class="text-5xl text-center font-medium text-headerText">An about me!</h1>

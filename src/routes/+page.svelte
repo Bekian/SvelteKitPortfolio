@@ -4,11 +4,12 @@
 
 
 
-<h1 class="text-5xl text-center font-medium text-grey">A portfolio!</h1>
+<h1 class="text-5xl text-center font-medium text-headerText">A portfolio!</h1>
 
 <style lang="postcss">
 :global(html) {
-    background-color: theme(colors.blue.500);
+    background-color: theme(colors.stone.900);
+    
 
     
 }
