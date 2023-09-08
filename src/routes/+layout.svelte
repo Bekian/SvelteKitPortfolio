@@ -1,6 +1,7 @@
 <script>
     import "../app.css";
     import { page } from '$app/stores';
+    import { navPages } from "$lib/stores";
 
     // Extract the pathname from the $page store
     let currentPage = $page.url.pathname;
@@ -125,10 +126,9 @@
   <div class="sm:hidden" id="mobile-menu">
     <div class="space-y-1 px-2 pb-3 pt-2">
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-      <a href="/" class="{currentPage === '/' ? 'bg-stone-800 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'} rounded-md px-3 py-2 text-sm font-medium {currentPage === '/' ? 'bg-stone-800 text-white' : ''}" aria-current="page">Home</a>
-      <a href="/projects" class="{currentPage === '/projects' ? 'bg-stone-800 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'} rounded-md px-3 py-2 text-sm font-medium {currentPage === '/projects' ? 'bg-stone-800 text-white' : ''}">Projects</a>
-      <a href="/about" class="{currentPage === '/about' ? 'bg-stone-800 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'} rounded-md px-3 py-2 text-sm font-medium {currentPage === '/about' ? 'bg-stone-800 text-white' : ''}">About</a>
-      <a href="/contact" class="{currentPage === '/contact' ? 'bg-stone-800 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'} rounded-md px-3 py-2 text-sm font-medium {currentPage === '/contact' ? 'bg-stone-800 text-white' : ''}">Contact</a>
+      {#each navPages as page}
+        <a href={`/${page.url}`} class="{currentPage === `/${page.url}` ? 'bg-stone-800 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'} block w-full rounded-md px-3 py-2 text-sm font-medium " aria-current="page">{page.title}</a>
+      {/each}
     </div>
   </div>
   {/if}

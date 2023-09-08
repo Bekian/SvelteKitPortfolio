@@ -29,3 +29,24 @@ export const posts = [
 		]
 	}
 ];
+
+export const navPages = [
+	// the url already has the slash so its not needed
+	// the form is {url:'string', title:'string'} TODO: jsdoc this
+	{
+		url:'',
+		title:'Home'
+	},
+	{
+		url: 'projects',
+		title:'Projects'
+	},
+	{
+		url: 'about',
+		title: 'About'
+	},
+	{
+		url: 'contacts',
+		title: 'Contacts'
+	}
+]
