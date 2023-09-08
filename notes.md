@@ -8,3 +8,4 @@
 8. move the homebox comopnent to the projects page
 9. make the buttons in the profile button and the alerts button do something useful
 10. make a featured page on the homepage after the other pages are done
+11. change the notifications menu button to an updates button and create a modal and animation for that

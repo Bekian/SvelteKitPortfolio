@@ -46,7 +46,7 @@ export const navPages = [
 		title: 'About'
 	},
 	{
-		url: 'contacts',
+		url: 'contact',
 		title: 'Contacts'
 	}
 ]
