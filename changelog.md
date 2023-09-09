@@ -13,3 +13,9 @@
  - Added dynamic navbar button generation, these come from the same source as the mobile nav menu 
  - Added clarification comments and spacing that denote what tags and sections are in the layout file
  - Added conditional rendering to the mobile nav menu button
+
+## Sept. 8th '23
+ - Added tailwind prettier
+ - Refactored the background style in the home +page.svelte file into the app.html file
+ - Added notes for tags
+ - Updated the layout of notes.md
