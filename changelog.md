@@ -19,3 +19,7 @@
  - Refactored the background style in the home +page.svelte file into the app.html file
  - Added notes for tags
  - Updated the layout of notes.md
+
+## Sept. 9th '23
+ - Implemented strategy pattern for the menu toggle function and added source to utils file
+ - Added utils.js file for functions that can be used anywhere but dont belong in a specific place
