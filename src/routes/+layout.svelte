@@ -16,13 +16,13 @@
 </script>
 
 
-<nav class="bg-neutral-900">
+<nav class="bg-neutral-900 border-b border-sky-600">
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
       <!-- Left Side Navbar-->
       <!-- Mobile menu button-->
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-        <button type="button" on:click={() => isMobileMenuVisible = !isMobileMenuVisible} class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+        <button type="button" on:click={() => isMobileMenuVisible = !isMobileMenuVisible} class="relative inline-flex items-center justify-center rounded-md p-2 text-neutral-400 hover:bg-neutral-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
           <span class="absolute -inset-0.5"></span>
           <span class="sr-only">Open main menu</span>
           <!-- svg container -->
@@ -49,7 +49,7 @@
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
             {#each navPages as page}
-            <a href={`/${page.url}`} class="{currentPage === `/${page.url}` ? 'bg-stone-800 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'} rounded-md px-3 py-2 text-sm font-medium " aria-current="page">{page.title}</a>
+            <a href={`/${page.url}`} class="{currentPage === `/${page.url}` ? 'bg-neutral-800 text-white' : 'text-neutral-300 hover:bg-neutral-700 hover:text-white'} rounded-md px-3 py-2 text-sm font-medium " aria-current="page">{page.title}</a>
             {/each}
           </div>
         </div>
@@ -60,7 +60,7 @@
       <!-- Notification button and Profile dropdown -->
       <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
         <!-- Notifications TODO: Add notfications to support this -->
-        <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+        <button type="button" class="relative rounded-full bg-neutral-800 p-1 text-neutral-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-800">
           <span class="absolute -inset-1.5"></span>
           <span class="sr-only">View notifications</span>
           <!-- Notification svg -->
@@ -74,7 +74,7 @@
           <div>
             <button
               type="button"
-              class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+              class="relative flex rounded-full bg-neutral-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-neutral-800"
               on:click={() => isProfileDropdownVisible = toggleDropdown(isProfileDropdownVisible)}
             >
               <span class="absolute -inset-1.5"></span>
@@ -84,10 +84,10 @@
           </div>
           {#if isProfileDropdownVisible === true } 
           <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" tabindex="-1" >
-            <!-- Active: "bg-gray-100", Not Active: "" -->
-            <a href="/[user]" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
-            <a href="/settings" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
-            <a href="/" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+            <!-- Active: "bg-neutral-100", Not Active: "" -->
+            <a href="/[user]" class="block px-4 py-2 text-sm text-neutral-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
+            <a href="/settings" class="block px-4 py-2 text-sm text-neutral-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
+            <a href="/" class="block px-4 py-2 text-sm text-neutral-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
           </div>
           {/if}
         </div>
@@ -100,9 +100,9 @@
   {#if isMobileMenuVisible === true}
   <div class="sm:hidden" id="mobile-menu">
     <div class="space-y-1 px-2 pb-3 pt-2">
-      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+      <!-- Current: "bg-neutral-900 text-white", Default: "text-neutral-300 hover:bg-neutral-700 hover:text-white" -->
       {#each navPages as page}
-        <a href={`/${page.url}`} class="{currentPage === `/${page.url}` ? 'bg-stone-800 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'} block w-full rounded-md px-3 py-2 text-sm font-medium " aria-current="page">{page.title}</a>
+        <a href={`/${page.url}`} class="{currentPage === `/${page.url}` ? 'bg-stone-800 text-white' : 'text-neutral-300 hover:bg-neutral-700 hover:text-white'} block w-full rounded-md px-3 py-2 text-sm font-medium " aria-current="page">{page.title}</a>
       {/each}
     </div>
   </div>

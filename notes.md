@@ -21,6 +21,6 @@
 
 11. change the notifications menu button to an updates button and create a modal and animation for that
 
-12. fix the tags so they're responsive and stack when the screen is too narrow 
+~~12. fix the tags so they're responsive and stack when the screen is too narrow~~
 
 ~~13. implement strategy pattern for the menus in the nav bar and move the function to a utils file ( ~~super ez~~ )~~

@@ -23,3 +23,10 @@
 ## Sept. 9th '23
  - Implemented strategy pattern for the menu toggle function and added source to utils file
  - Added utils.js file for functions that can be used anywhere but dont belong in a specific place
+
+## Sept. 10th '23
+ - Fixed homebox tags so they're responsive for mobile layouts
+ - Added text scaling for larger screens for homeBox
+ - Added dynamic source input for homeBox image
+ - Added responsive image layout for mobile so the layout changes depending on mobile or not
+ - Added a light blue border to navbar
