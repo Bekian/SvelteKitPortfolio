@@ -10,7 +10,7 @@
             <p class="mb-4 w-5/6 2xl:text-2xl text-base text-headerText">
                 {post.description}
             </p>
-            <div class="flex flex-wrap space-x-2">
+            <div class="flex flex-wrap gap-x-2">
                 {#each post.tags as tag}
                 <span class="block px-2 py-1 text-center align-middle min-w-fit min-h-fit text-sm bg-gray-300 rounded-full mb-2">{tag}</span>
                 {/each}
