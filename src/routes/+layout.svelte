@@ -100,7 +100,6 @@
   {#if isMobileMenuVisible === true}
   <div class="sm:hidden" id="mobile-menu">
     <div class="space-y-1 px-2 pb-3 pt-2">
-      <!-- Current: "bg-neutral-900 text-white", Default: "text-neutral-300 hover:bg-neutral-700 hover:text-white" -->
       {#each navPages as page}
         <a href={`/${page.url}`} class="{currentPage === `/${page.url}` ? 'bg-stone-800 text-white' : 'text-neutral-300 hover:bg-neutral-700 hover:text-white'} block w-full rounded-md px-3 py-2 text-sm font-medium " aria-current="page">{page.title}</a>
       {/each}

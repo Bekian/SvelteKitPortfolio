@@ -30,3 +30,6 @@
  - Added dynamic source input for homeBox image
  - Added responsive image layout for mobile so the layout changes depending on mobile or not
  - Added a light blue border to navbar
+
+## Sept. 16th '23
+ - added repo stuff for github api still a wip tho (fix this later)
